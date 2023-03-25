@@ -135,10 +135,22 @@ const MoviesSection = styled.section`
     .movies {
       grid-template-columns: repeat(2, 1fr);
     }
+    .popup {
+      top: -100%;
+    }
+    .showpopup {
+      top: 30%;
+    }
   }
   @media (max-width: 460px) {
     .movies {
       grid-template-columns: repeat(1, 1fr);
+    }
+    .popup {
+      top: -100%;
+    }
+    .showpopup {
+      top: 50%;
     }
   }
 `;
