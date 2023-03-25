@@ -15,7 +15,7 @@ export const Login = () => {
     data = Object.fromEntries(data);
     if (!data.name || !data.password) return alert("Please Fill All Fields");
     form.reset();
-    
+
     const signUpData = JSON.parse(localStorage.getItem("signupData"));
     if (data.name == signUpData.name && data.password == signUpData.password) {
       alert("Login Successful");
@@ -115,13 +115,37 @@ const LoginPage = styled.div`
   }
 
   @media (max-width: 760px) {
-  }
-  @media (max-width: 460px) {
-    .signup_form {
+    .login_form {
+      width: 100vw;
+      align-items: center;
+    }
+    .form {
       width: 100%;
     }
     .formfield {
       flex-direction: column;
+      width: 90%;
+      input,
+      select {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 460px) {
+    .login_form {
+      width: 100vw;
+      align-items: center;
+    }
+    .form {
+      width: 100%;
+    }
+    .formfield {
+      flex-direction: column;
+      width: 90%;
+      input,
+      select {
+        width: 100%;
+      }
     }
   }
 `;

@@ -144,13 +144,37 @@ const SignUp = styled.div`
   }
 
   @media (max-width: 760px) {
-  }
-  @media (max-width: 460px) {
     .signup_form {
+      width: 100vw;
+      align-items: center;
+    }
+    .form {
       width: 100%;
     }
     .formfield {
       flex-direction: column;
+      width: 90%;
+      input,
+      select {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 460px) {
+    .signup_form {
+      width: 100vw;
+      align-items: center;
+    }
+    .form {
+      width: 100%;
+    }
+    .formfield {
+      flex-direction: column;
+      width: 90%;
+      input,
+      select {
+        width: 100%;
+      }
     }
   }
 `;
